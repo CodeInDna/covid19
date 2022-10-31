@@ -19,6 +19,10 @@
 			"type": "string",
 			"defaultValue": "https://covid19reportingdlv2.dfs.core.windows.net/"
 		},
+		"tr_ingest_population_data_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/4092e715-2d4e-4c34-a5b2-fa7431125cf0/resourceGroups/covid19-reporting-rg/providers/Microsoft.Storage/storageAccounts/covid19reportingsav2"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -54,6 +58,9 @@
 					},
 					"ls_adls_covid19_reporting_dl_properties_typeProperties_url": {
 						"value": "[parameters('ls_adls_covid19_reporting_dl_properties_typeProperties_url')]"
+					},
+					"tr_ingest_population_data_properties_typeProperties_scope": {
+						"value": "[parameters('tr_ingest_population_data_properties_typeProperties_scope')]"
 					}
 				}
 			},
